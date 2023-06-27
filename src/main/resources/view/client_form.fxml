@@ -40,12 +40,12 @@
          </font>
       </JFXTextArea>
       <VBox layoutX="4.0" layoutY="693.0" prefHeight="70.0" prefWidth="598.0" style="-fx-background-color: black;" />
-      <JFXTextField layoutX="10.0" layoutY="702.0" prefHeight="51.0" prefWidth="390.0" style="-fx-background-color: #a29bfe;" styleClass="TextFiled" stylesheets="@../css/styleSheet.css">
+      <JFXTextField fx:id="clientTextField" layoutX="10.0" layoutY="702.0" prefHeight="51.0" prefWidth="390.0" style="-fx-background-color: #a29bfe;" styleClass="TextFiled" stylesheets="@../css/styleSheet.css">
          <font>
             <Font name="Franklin Gothic Medium" size="19.0" />
          </font>
       </JFXTextField>
-      <JFXButton graphicTextGap="25.0" layoutX="428.0" layoutY="701.0" prefHeight="51.0" prefWidth="153.0" style="-fx-background-color: white;" styleClass="Loginbtn" stylesheets="@../css/styleSheet.css" text="Send">
+      <JFXButton fx:id="clientSendBtn" graphicTextGap="25.0" layoutX="428.0" layoutY="701.0" prefHeight="51.0" prefWidth="153.0" style="-fx-background-color: white;" styleClass="Loginbtn" stylesheets="@../css/styleSheet.css" text="Send">
          <font>
             <Font name="System Bold Italic" size="19.0" />
          </font>
