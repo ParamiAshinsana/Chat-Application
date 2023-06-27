@@ -12,9 +12,9 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginFormController">
+<AnchorPane fx:id="rootLogin" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginFormController">
    <children>
-      <Label fx:id="lblSt1" layoutX="57.0" layoutY="263.0" prefHeight="32.0" prefWidth="377.0" text="Easily connect , communicate and collaborate.">
+      <Label fx:id="lblSt1" layoutX="57.0" layoutY="249.0" prefHeight="32.0" prefWidth="377.0" text="Easily connect , communicate and collaborate.">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -29,7 +29,7 @@
             <Font name="Serif Regular" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lblSt2" layoutX="434.0" layoutY="262.0" prefHeight="32.0" prefWidth="278.0" text="Get excited to start conversations!">
+      <Label fx:id="lblSt2" layoutX="434.0" layoutY="249.0" prefHeight="32.0" prefWidth="278.0" text="Get excited to start conversations!">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -44,7 +44,7 @@
             <Font name="Serif Regular" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lblSt3" layoutX="122.0" layoutY="293.0" prefHeight="32.0" prefWidth="514.0" text="Login to unlock a seamless and immersive chatting experience">
+      <Label fx:id="lblSt3" layoutX="122.0" layoutY="276.0" prefHeight="32.0" prefWidth="514.0" text="Login to unlock a seamless and immersive chatting experience">
          <textFill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
@@ -66,15 +66,7 @@
       </JFXTextField>
       <AnchorPane layoutX="187.0" layoutY="9.0" prefHeight="248.0" prefWidth="389.0" style="-fx-background-color: black;">
          <children>
-            <ImageView fitHeight="190.0" fitWidth="194.0" layoutX="97.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../img/Chatify%20Icon.png" />
-               </image>
-               <effect>
-                  <Glow level="1.0" />
-               </effect>
-            </ImageView>
-            <Label layoutX="20.0" layoutY="169.0" prefHeight="40.0" prefWidth="358.0" text="WELCOME TO  CHATIFY !" textFill="WHITE">
+            <Label layoutX="33.0" layoutY="148.0" prefHeight="40.0" prefWidth="358.0" text="WELCOME TO  CHATIFY !" textFill="WHITE">
                <font>
                   <Font name="MV Boli" size="26.0" />
                </font>
@@ -82,12 +74,17 @@
                   <Glow level="1.0" />
                </effect>
             </Label>
+            <ImageView fitHeight="169.0" fitWidth="184.0" layoutX="105.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/ChatifyIcon.png" />
+               </image>
+            </ImageView>
          </children>
          <effect>
             <Glow level="0.76" />
          </effect>
       </AnchorPane>
-      <JFXButton fx:id="btnLogin" layoutX="535.0" layoutY="371.0" prefHeight="59.0" prefWidth="141.0" style="-fx-background-color: #BE00FE;" stylesheets="@../css/styleSheet.css" text="Login">
+      <JFXButton fx:id="btnLogin" layoutX="536.0" layoutY="371.0" onAction="#btnLoginOnAction" prefHeight="59.0" prefWidth="141.0" style="-fx-background-color: #BE00FE;" stylesheets="@../css/styleSheet.css" text="Login">
          <font>
             <Font name="Sylfaen" size="33.0" />
          </font>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="770.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController">
+   <children>
+      <AnchorPane fx:id="topRoot" layoutX="-1.0" prefHeight="70.0" prefWidth="607.0" style="-fx-background-color: black;">
+         <children>
+            <Label fx:id="userNameLbl" layoutX="117.0" layoutY="15.0" prefHeight="44.0" prefWidth="460.0" textFill="#a29bfe">
+               <font>
+                  <Font name="Mongolian Baiti" size="39.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="93.0" fitWidth="89.0" layoutX="10.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/PersonIcon.png" />
+         </image>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </ImageView>
+      <JFXTextArea fx:id="clientTextArea" layoutX="13.0" layoutY="77.0" prefHeight="602.0" prefWidth="580.0">
+         <font>
+            <Font name="SansSerif Bold Italic" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <VBox layoutX="4.0" layoutY="693.0" prefHeight="70.0" prefWidth="598.0" style="-fx-background-color: black;" />
+      <JFXTextField layoutX="10.0" layoutY="702.0" prefHeight="51.0" prefWidth="390.0" style="-fx-background-color: #a29bfe;" styleClass="TextFiled" stylesheets="@../css/styleSheet.css">
+         <font>
+            <Font name="Franklin Gothic Medium" size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton graphicTextGap="25.0" layoutX="428.0" layoutY="701.0" prefHeight="51.0" prefWidth="153.0" style="-fx-background-color: white;" styleClass="Loginbtn" stylesheets="@../css/styleSheet.css" text="Send">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/SendButton.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <Glow level="0.63" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

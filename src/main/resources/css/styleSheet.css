@@ -13,3 +13,11 @@
 .ButtonAnother1:hover{
     -fx-background-color: linear-gradient(to right,#ffffff,#ffffff);
 }
+
+.TextStyle{
+    -fx-border-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-font-size: 15 ;
+    -fx-font-style:bold ;
+    -fx-font-color:red;
+}
