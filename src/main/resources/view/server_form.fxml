@@ -11,12 +11,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="770.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerController">
    <children>
       <AnchorPane fx:id="topRoot" layoutY="-1.0" prefHeight="70.0" prefWidth="607.0" style="-fx-background-color: #81ecec;">
          <children>
-            <Label fx:id="serverNameLbl" layoutX="117.0" layoutY="15.0" prefHeight="44.0" prefWidth="460.0" text="SERVER" textFill="#a29bfe">
+            <Label fx:id="serverNameLabel" layoutX="117.0" layoutY="15.0" prefHeight="44.0" prefWidth="460.0" text="SERVER" textFill="#a29bfe">
                <font>
                   <Font name="Mongolian Baiti" size="39.0" />
                </font>
@@ -45,7 +44,7 @@
             <Font name="Franklin Gothic Medium" size="19.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="serverSendBtn" graphicTextGap="25.0" layoutX="432.0" layoutY="703.0" prefHeight="51.0" prefWidth="153.0" style="-fx-background-color: white;" styleClass="Loginbtn" stylesheets="@../css/styleSheet.css" text="Send">
+      <JFXButton fx:id="serverSendBtn" graphicTextGap="25.0" layoutX="432.0" layoutY="703.0" onAction="#serverSendBtnOnAction" prefHeight="51.0" prefWidth="153.0" style="-fx-background-color: white;" styleClass="Loginbtn" stylesheets="@../css/styleSheet.css" text="Send">
          <font>
             <Font name="System Bold Italic" size="19.0" />
          </font>
