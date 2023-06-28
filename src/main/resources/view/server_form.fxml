@@ -32,11 +32,17 @@
                </effect>
             </ImageView>
          </children>
+         <effect>
+            <Glow level="0.39" />
+         </effect>
       </AnchorPane>
-      <JFXTextArea fx:id="serverTextArea" layoutX="13.0" layoutY="78.0" prefHeight="602.0" prefWidth="580.0">
+      <JFXTextArea fx:id="serverTextArea" layoutX="13.0" layoutY="78.0" prefHeight="602.0" prefWidth="580.0" style="-fx-border-color: black;">
          <font>
             <Font name="SansSerif Bold Italic" size="21.0" />
          </font>
+         <effect>
+            <Glow level="0.6" />
+         </effect>
       </JFXTextArea>
       <VBox layoutX="6.0" layoutY="694.0" prefHeight="70.0" prefWidth="598.0" style="-fx-background-color: black;" />
       <JFXTextField fx:id="serverTextField" layoutX="15.0" layoutY="703.0" prefHeight="51.0" prefWidth="390.0" style="-fx-background-color: #a29bfe;" styleClass="TextFiled" stylesheets="@../css/styleSheet.css">
