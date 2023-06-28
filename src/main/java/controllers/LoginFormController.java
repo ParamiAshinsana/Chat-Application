@@ -30,6 +30,7 @@ public class LoginFormController {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.show();
+        stage.setTitle(userName+" Form");
         loginTxtField.setText("");
     }
 }

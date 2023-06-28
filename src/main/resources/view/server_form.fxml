@@ -13,7 +13,7 @@
 
 <AnchorPane prefHeight="770.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerController">
    <children>
-      <AnchorPane fx:id="topRoot" layoutY="-1.0" prefHeight="70.0" prefWidth="607.0" style="-fx-background-color: #81ecec;">
+      <AnchorPane fx:id="topRoot" layoutY="-1.0" prefHeight="70.0" prefWidth="607.0" style="-fx-background-color: black;">
          <children>
             <Label fx:id="serverNameLabel" layoutX="117.0" layoutY="15.0" prefHeight="44.0" prefWidth="460.0" text="SERVER" textFill="#a29bfe">
                <font>
