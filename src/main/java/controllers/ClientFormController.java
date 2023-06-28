@@ -29,20 +29,26 @@ public class ClientFormController extends Application {
     static String message = "";
 
     public void initialize(){
-        new Thread(()->{
-            try {
-                socket = new Socket("localhost",4005);
-                dataInputStream = new DataInputStream(socket.getInputStream());
-                dataOutputStream = new DataOutputStream(socket.getOutputStream());
-                while (!message.equals("finish")){
-                    message = dataInputStream.readUTF();
-                    clientTextArea.appendText("\nServer : "+message);
-                    //clientTextArea.setText("\nServer : "+message);
+        try {
+            socket = new Socket("localhost",4005);
+            //to get input from server
+            dataInputStream = new DataInputStream(socket.getInputStream());
+            //to send data to server
+            dataOutputStream = new DataOutputStream(socket.getOutputStream());
+
+            Client_Receive_Task ob = new Client_Receive_Task(dataInputStream);
+            ob.valueProperty().addListener(new ChangeListener<String>() {
+                @Override
+                public void changed(ObservableValue<? extends String> observableValue, String oldvalue, String newValue) {
+                    clientTextArea.appendText("\nServer : "+newValue);
                 }
-            }catch (IOException e){
-                throw new RuntimeException(e);
-            }
-        }).start();
+            });
+            new Thread(ob).start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
     public void setLabel(String userName) {

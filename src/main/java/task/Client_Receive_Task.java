@@ -7,10 +7,9 @@ import java.io.DataOutputStream;
 
 public class Client_Receive_Task extends Task<String> {
     DataInputStream dataInputStream;
-    DataOutputStream dataOutputStream ;
 
-    public Client_Receive_Task(DataOutputStream out){
-        dataOutputStream = out ;
+    public Client_Receive_Task(DataInputStream in){
+        dataInputStream = in ;
     }
 
     @Override
@@ -19,7 +18,7 @@ public class Client_Receive_Task extends Task<String> {
         String message = "";
         while(!message.equals("finished")) {
             message = dataInputStream.readUTF();
-            updateMessage(message);
+            updateValue(message);
         }
         return "";
     }
